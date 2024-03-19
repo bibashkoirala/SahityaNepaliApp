@@ -17,7 +17,7 @@ class _SahityaCardState extends State<SahityaCard> {
                 Container(
                    decoration: BoxDecoration(
             border: Border.all(
-              color: Colors.red[100]!,
+              color: Colors.grey[300]!,
             )
           ),
                   width: double.infinity,

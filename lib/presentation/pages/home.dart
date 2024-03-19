@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
@@ -38,10 +40,9 @@ Widget _bodyHomePage() {
         children: [
           Text('Welcome!', style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),),
           Text('Here are few heightlighted Sahitya in 2024', style: TextStyle(fontSize: 14, color: Colors.grey),),
-          Divider(
-            thickness: 1,
-            color: Colors.red[100],
-            
+          Container(width: 40,
+          height: 4,
+          color: Colors.grey,
           ),
          SizedBox(height: 10,),
           SahityaCatagory(),

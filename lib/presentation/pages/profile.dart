@@ -113,13 +113,7 @@ class _ProfileState extends State<Profile> {
                             ),
                             child: Text(card.buttonText),
                           ),
-                          Row(
-                            children: [
-                              //give 2 x2 tiles
-                             
-                              
-                            ]
-                          )
+                          
                         ],
                       ),
                     ),
@@ -182,7 +176,7 @@ List<ProfileCompletionCard> profileCompletionCards = [
     buttonText: "Upload",
   ),
   ProfileCompletionCard(
-    title: "You Liked",
+    title: "Badges/Achievements",
     icon: CupertinoIcons.square_list,
     buttonText: "View",
   ),
