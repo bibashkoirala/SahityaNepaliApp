@@ -1,0 +1,28 @@
+^C:\USERS\NATIO\DESKTOP\FLUTTER CLEAN ARCHITECTURE\SAHITYAAPP\SAHITYANEPALIAPP\BUILD\WINDOWS\CMAKEFILES\C6314880ACBF3E41A54B2575442F6268\FLUTTER_WINDOWS.DLL.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E env FLUTTER_ROOT=C:\flutter "PROJECT_DIR=C:\Users\natio\Desktop\Flutter Clean Architecture\sahityaApp\SahityaNepaliApp" FLUTTER_ROOT=C:\flutter "FLUTTER_EPHEMERAL_DIR=C:\Users\natio\Desktop\Flutter Clean Architecture\sahityaApp\SahityaNepaliApp\windows\flutter\ephemeral" "PROJECT_DIR=C:\Users\natio\Desktop\Flutter Clean Architecture\sahityaApp\SahityaNepaliApp" "FLUTTER_TARGET=C:\Users\natio\Desktop\Flutter Clean Architecture\sahityaApp\SahityaNepaliApp\lib\main.dart" DART_DEFINES=RkxVVFRFUl9XRUJfQVVUT19ERVRFQ1Q9dHJ1ZQ== DART_OBFUSCATION=false TRACK_WIDGET_CREATION=true TREE_SHAKE_ICONS=false "PACKAGE_CONFIG=C:\Users\natio\Desktop\Flutter Clean Architecture\sahityaApp\SahityaNepaliApp\.dart_tool\package_config.json" C:/flutter/packages/flutter_tools/bin/tool_backend.bat windows-x64 Debug
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\NATIO\DESKTOP\FLUTTER CLEAN ARCHITECTURE\SAHITYAAPP\SAHITYANEPALIAPP\BUILD\WINDOWS\CMAKEFILES\86FB9B6EF218B4B0F81018F5BE3D2A5A\FLUTTER_ASSEMBLE.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\NATIO\DESKTOP\FLUTTER CLEAN ARCHITECTURE\SAHITYAAPP\SAHITYANEPALIAPP\WINDOWS\FLUTTER\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" "-SC:/Users/natio/Desktop/Flutter Clean Architecture/sahityaApp/SahityaNepaliApp/windows" "-BC:/Users/natio/Desktop/Flutter Clean Architecture/sahityaApp/SahityaNepaliApp/build/windows" --check-stamp-file "C:/Users/natio/Desktop/Flutter Clean Architecture/sahityaApp/SahityaNepaliApp/build/windows/flutter/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -69,6 +69,9 @@ Widget _bodyHomePage() {
         SizedBox(height: 10,),
         Authors(),
         SahityaCard(),
+        Center(
+          child: Text("Powered by CodeSpec Solutions"),
+        ),
         
         ],
       ),

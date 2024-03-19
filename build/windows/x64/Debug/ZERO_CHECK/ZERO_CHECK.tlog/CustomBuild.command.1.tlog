@@ -1,0 +1,10 @@
+^C:\USERS\NATIO\DESKTOP\FLUTTER CLEAN ARCHITECTURE\SAHITYAAPP\SAHITYANEPALIAPP\BUILD\WINDOWS\CMAKEFILES\3141619C5CA4F244C761BB90A70B020C\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" "-SC:/Users/natio/Desktop/Flutter Clean Architecture/sahityaApp/SahityaNepaliApp/windows" "-BC:/Users/natio/Desktop/Flutter Clean Architecture/sahityaApp/SahityaNepaliApp/build/windows" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/natio/Desktop/Flutter Clean Architecture/sahityaApp/SahityaNepaliApp/build/windows/sahitya_application.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

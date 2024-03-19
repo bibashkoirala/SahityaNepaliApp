@@ -1,0 +1,10 @@
+C:/Users/natio/Desktop/Flutter Clean Architecture/sahityaApp/SahityaNepaliApp/build/windows/runner/Debug/data/icudtl.dat
+C:/Users/natio/Desktop/Flutter Clean Architecture/sahityaApp/SahityaNepaliApp/build/windows/runner/Debug/flutter_windows.dll
+C:/Users/natio/Desktop/Flutter Clean Architecture/sahityaApp/SahityaNepaliApp/build/windows/runner/Debug/data/flutter_assets/AssetManifest.json
+C:/Users/natio/Desktop/Flutter Clean Architecture/sahityaApp/SahityaNepaliApp/build/windows/runner/Debug/data/flutter_assets/FontManifest.json
+C:/Users/natio/Desktop/Flutter Clean Architecture/sahityaApp/SahityaNepaliApp/build/windows/runner/Debug/data/flutter_assets/fonts/MaterialIcons-Regular.otf
+C:/Users/natio/Desktop/Flutter Clean Architecture/sahityaApp/SahityaNepaliApp/build/windows/runner/Debug/data/flutter_assets/kernel_blob.bin
+C:/Users/natio/Desktop/Flutter Clean Architecture/sahityaApp/SahityaNepaliApp/build/windows/runner/Debug/data/flutter_assets/NOTICES.Z
+C:/Users/natio/Desktop/Flutter Clean Architecture/sahityaApp/SahityaNepaliApp/build/windows/runner/Debug/data/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf
+C:/Users/natio/Desktop/Flutter Clean Architecture/sahityaApp/SahityaNepaliApp/build/windows/runner/Debug/data/flutter_assets/packages/feather_icons/fonts/feather.ttf
+C:/Users/natio/Desktop/Flutter Clean Architecture/sahityaApp/SahityaNepaliApp/build/windows/runner/Debug/data/flutter_assets/shaders/ink_sparkle.frag

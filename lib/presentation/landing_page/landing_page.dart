@@ -14,7 +14,7 @@ class LandingPage extends StatefulWidget {
 }
 
 class _LandingPageState extends State<LandingPage> {
-  int currentIndex = 0;
+  int currentIndex = 1;
   List <Widget> pages = [Home(), Profile(), AddSahitya(),  Swap(), Store()];
   @override
   Widget build(BuildContext context) {
