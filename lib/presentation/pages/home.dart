@@ -9,6 +9,7 @@ import 'package:sahitya_application/utils/sections/Authors.dart';
 import '../../utils/appbar/appbar.dart';
 import '../../utils/sections/cardplate.dart';
 import '../../utils/sections/sahityacatagory.dart';
+import '../../utils/sections/side_menu.dart';
 import '../../utils/sections/upcommingevents.dart';
 class Home extends StatelessWidget {
   const Home({super.key});
@@ -17,6 +18,9 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: MyAppBar(),
+
+      drawer: const SideMenu(),
+
       body: SingleChildScrollView(
         scrollDirection: Axis.vertical,
         child: 
@@ -38,39 +42,39 @@ Widget _bodyHomePage() {
       child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text('Welcome!', style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),),
-          Text('Here are few heightlighted Sahitya in 2024', style: TextStyle(fontSize: 14, color: Colors.grey),),
+          const Text('Welcome!', style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),),
+          const Text('Here are few heightlighted Sahitya in 2024', style: TextStyle(fontSize: 14, color: Colors.grey),),
           Container(width: 40,
           height: 4,
           color: Colors.grey,
           ),
-         SizedBox(height: 10,),
-          SahityaCatagory(),
+         const SizedBox(height: 10,),
+          const SahityaCatagory(),
           
-          SizedBox(height: 10,),
+          const SizedBox(height: 10,),
          
          //call a card from next page
-         CardPlate(),
+         const CardPlate(),
 
-         SizedBox(height: 10,),
-          Authors(),
+         const SizedBox(height: 10,),
+          const Authors(),
 
-        Padding(
-          padding: const EdgeInsets.all(8.0),
+        const Padding(
+          padding: EdgeInsets.all(8.0),
           child: Text("Recient Inks:", style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),),
         ),
-        SahityaCard(),
-        SahityaCard(),
-        SahityaCard(),
+        const SahityaCard(),
+        const SahityaCard(),
+        const SahityaCard(),
 
-        UpComming_Events(),
-        SahityaCard(),
-        SahityaCard(),
+        const UpComming_Events(),
+        const SahityaCard(),
+        const SahityaCard(),
 
-        SizedBox(height: 10,),
-        Authors(),
-        SahityaCard(),
-        Center(
+        const SizedBox(height: 10,),
+        const Authors(),
+        const SahityaCard(),
+        const Center(
           child: Text("Powered by CodeSpec Solutions"),
         ),
         

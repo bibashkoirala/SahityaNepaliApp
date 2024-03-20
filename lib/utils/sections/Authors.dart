@@ -32,11 +32,7 @@ _Authors() {
       SingleChildScrollView(
         scrollDirection: Axis.horizontal,
         child: Container(
-           decoration: BoxDecoration(
-            border: Border.all(
-              color: Colors.red[100]!,
-            )
-          ),
+           
           child: Row(
             children: List.generate(
               10,

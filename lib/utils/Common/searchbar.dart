@@ -23,7 +23,7 @@ class Searchbar extends StatelessWidget {
                 border: Border.all(
                   color: Colors.grey,
                 ),
-                color: Colors.grey[200],
+                color: Colors.red[50],
               ),
               child: Icon( Icons.filter_alt_off_outlined, color: Colors.red,  )),
            ),
@@ -38,7 +38,7 @@ class Searchbar extends StatelessWidget {
                 border: Border.all(
                   color: Colors.grey,
                 ),
-                color: Colors.grey[200],
+                color: Colors.red[50],
               ),
               child: Icon( Icons.search, color: Colors.red,  )),
           ),
@@ -58,7 +58,7 @@ class Searchbar extends StatelessWidget {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
-                    Text('Search for ArtPiece', style: TextStyle(color: Colors.black38),),
+                    Text('Search for ArtPiece', style: TextStyle(color: Colors.red[200]),),
                     // Icon(Icons.search, color: Colors.red,  ),
                   ],
                 ),

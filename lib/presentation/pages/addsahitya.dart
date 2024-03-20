@@ -13,7 +13,10 @@ class AddSahitya extends StatelessWidget {
         child: AppBar(
           toolbarHeight: 70,
           leading: IconButton(
-            icon: const Icon(Icons.arrow_back, color: Colors.black,), onPressed: () { },
+            icon: const Icon(Icons.arrow_back, color: Colors.black,), onPressed: () { 
+              //navigate to home page
+              
+            },
           ),
           title: Row(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -48,7 +51,7 @@ class AddSahitya extends StatelessWidget {
                 ),
                 maxLines: 7,),
             ),
-           
+         
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Row(

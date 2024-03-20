@@ -3,10 +3,12 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:sahitya_application/presentation/landing_page/landing_page.dart';
 import 'package:sahitya_application/presentation/pages/store.dart';
-import 'package:sahitya_application/presentation/pages/swap.dart';
+import 'package:sahitya_application/presentation/pages/draft.dart';
 import 'package:sahitya_application/presentation/routes/app_route_constants.dart';
+import 'package:sahitya_application/utils/sections/upcommingevents.dart';
 
 import '../pages/addsahitya.dart';
+
 import '../pages/home.dart';
 import '../pages/profile.dart';
 
@@ -41,7 +43,7 @@ GoRouter router = GoRouter(
       },
       ),
 
-GoRoute(
+     GoRoute(
       name: SahityaAppRouteConstants.addsahitya,
       path: '/addsahitya',
       pageBuilder: (context, state) {
@@ -50,10 +52,10 @@ GoRoute(
       ),
       
      GoRoute(
-      name: SahityaAppRouteConstants.swap,
-      path: '/swap',
+      name: SahityaAppRouteConstants.draft,
+      path: '/draft',
       pageBuilder: (context, state) {
-        return MaterialPage(child: Swap());
+        return MaterialPage(child: Draft());
       },
       ),
      
@@ -62,6 +64,13 @@ GoRoute(
       path: '/store',
       pageBuilder: (context, state) {
         return MaterialPage(child: Store());
+      },
+      ),
+    GoRoute(
+      name: SahityaAppRouteConstants.upcommingevents,
+      path: '/UpComming_Events',
+      pageBuilder: (context, state) {
+        return MaterialPage(child: UpComming_Events());
       },
       ),
 

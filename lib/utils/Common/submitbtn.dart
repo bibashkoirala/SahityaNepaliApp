@@ -12,11 +12,24 @@ class Submitbutton extends StatefulWidget {
 class _SubmitbuttonState extends State<Submitbutton> {
   @override
   Widget build(BuildContext context) {
-    return  Padding(
-               padding: const EdgeInsets.all(28.0),
-               child: ElevatedButton(onPressed: (){
-             
-               }, child: Text('Submit Sahitya')),
-             );
+    return Row(
+      children: [
+        Expanded(
+          flex: 2,
+          child: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: ElevatedButton(onPressed: () {}, child: Text('Publish Sahitya')),
+          ),
+        ),
+        Expanded(
+          flex: 1,
+          child: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: ElevatedButton(onPressed: () {}, child: Text('Draft')),
+          ),
+        ),
+      ],
+    );
+   
   }
 }

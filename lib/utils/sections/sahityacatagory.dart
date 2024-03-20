@@ -30,11 +30,7 @@ _sahityaCatagory() {
         SingleChildScrollView(
           scrollDirection: Axis.horizontal,
           child: Container(
-             decoration: BoxDecoration(
-              border: Border.all(
-                color: Colors.grey[300]!,
-              )
-            ),
+             
             child: Row(
               children: List.generate(
                 10,

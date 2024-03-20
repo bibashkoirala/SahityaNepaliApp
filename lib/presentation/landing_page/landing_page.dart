@@ -4,7 +4,7 @@ import '../pages/addsahitya.dart';
 import '../pages/home.dart';
 import '../pages/profile.dart';
 import '../pages/store.dart';
-import '../pages/swap.dart';
+import '../pages/draft.dart';
 
 class LandingPage extends StatefulWidget {
   const LandingPage({super.key});
@@ -15,7 +15,7 @@ class LandingPage extends StatefulWidget {
 
 class _LandingPageState extends State<LandingPage> {
   int currentIndex = 0;
-  List <Widget> pages = [Home(), Profile(), AddSahitya(),  Swap(), Store()];
+  List <Widget> pages = [Home(), Profile(), AddSahitya(),  Draft(), Store()];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -39,7 +39,7 @@ class _LandingPageState extends State<LandingPage> {
            label: 'Home'),
         BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Profile'),
         BottomNavigationBarItem(icon: Icon(Icons.add), label: 'Add Sahitya'),
-        BottomNavigationBarItem(icon: Icon(Icons.swap_horiz), label: 'Swap'),
+        BottomNavigationBarItem(icon: Icon(Icons.drive_file_rename_outline_sharp), label: 'Draft'),
         BottomNavigationBarItem(icon: Icon(Icons.store), label: 'Store'),
       ]),
       body: pages

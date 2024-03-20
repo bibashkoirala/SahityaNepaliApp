@@ -32,8 +32,18 @@ class _SahityaCardState extends State<SahityaCard> {
 
                                                   //show refresh button
                         child: Padding(
-                          padding: const EdgeInsets.only(left:200),
-                          child: Icon(Icons.refresh, size: 35, color: Colors.black45,),
+                          padding: const EdgeInsets.only(left:10),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              CircleAvatar(
+                                radius: 25,
+                                backgroundColor: Colors.black45,
+                              ),
+                              Text('Catagory', style: TextStyle(fontSize: 12, color: Colors.black),),
+                              // Icon(Icons.refresh, size: 26, color: Colors.black45,),
+                            ],
+                          ),
                         ),
                         ),  
                         Column(
