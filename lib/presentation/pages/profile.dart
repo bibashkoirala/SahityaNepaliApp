@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
+import 'package:sahitya_application/core/constants/sahitya_colors.dart';
 
 import '../../utils/appbar/appbar.dart';
 
@@ -136,8 +137,12 @@ class _ProfileState extends State<Profile> {
                 return Padding(
                   padding: const EdgeInsets.only(bottom: 5),
                   child: Card(
+                    
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10),
+                    ),
                     elevation: 4,
-                    shadowColor: Colors.black12,
+                    shadowColor: SahityaColors.accentColor,
                     child: ListTile(
                       leading: Icon(tile.icon),
                       title: Text(tile.title),
@@ -175,14 +180,14 @@ List<ProfileCompletionCard> profileCompletionCards = [
     buttonText: "Continue",
   ),
   ProfileCompletionCard(
-    title: "Your contents",
+    title: "Pin Sahitya",
     icon: CupertinoIcons.doc,
-    buttonText: "Upload",
+    buttonText: "View",
   ),
   ProfileCompletionCard(
     title: "Badges/Achievements",
     icon: CupertinoIcons.square_list,
-    buttonText: "View",
+    buttonText: "Get",
   ),
 ];
 
@@ -196,14 +201,14 @@ class CustomListTile {
 }
 
 List<CustomListTile> customListTiles = [
+  
+   
   CustomListTile(
-    icon: Icons.insights,
-    title: "Activity",
+     title: "Activity",
+     icon: CupertinoIcons.graph_circle_fill,
+   
   ),
-  CustomListTile(
-    icon: Icons.location_on_outlined,
-    title: "Location",
-  ),
+ 
   CustomListTile(
     title: "Notifications",
     icon: CupertinoIcons.bell,

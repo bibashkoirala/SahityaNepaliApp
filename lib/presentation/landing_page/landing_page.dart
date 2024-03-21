@@ -7,15 +7,21 @@ import '../pages/store.dart';
 import '../pages/draft.dart';
 
 class LandingPage extends StatefulWidget {
-  const LandingPage({super.key});
+  const LandingPage({Key? key}) : super(key: key);
 
   @override
   State<LandingPage> createState() => _LandingPageState();
 }
 
 class _LandingPageState extends State<LandingPage> {
-  int currentIndex = 0;
-  List <Widget> pages = [Home(), Profile(), AddSahitya(),  Draft(), Store()];
+  int _currentIndex = 2;
+  final List<Widget> pages = [
+    Home(),
+    Profile(),
+    //  AddSahitya(),
+    Draft(),
+    Store()
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -24,26 +30,30 @@ class _LandingPageState extends State<LandingPage> {
         unselectedItemColor: Colors.grey,
         selectedIconTheme: const IconThemeData(color: Colors.black87),
         iconSize: 30,
-        currentIndex : currentIndex,
+        currentIndex: _currentIndex,
         onTap: (index) {
           setState(() {
-            currentIndex =index;
+            _currentIndex = index;
           });
         },
-        items: 
-        [
-        BottomNavigationBarItem(
-          icon: Icon(Icons.home, 
-         
+        items: [
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home),
+            label: 'Home',
           ),
-           label: 'Home'),
-        BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Profile'),
-        BottomNavigationBarItem(icon: Icon(Icons.add), label: 'Add Sahitya'),
-        BottomNavigationBarItem(icon: Icon(Icons.drive_file_rename_outline_sharp), label: 'Draft'),
-        BottomNavigationBarItem(icon: Icon(Icons.store), label: 'Store'),
-      ]),
-      body: pages
-      [currentIndex],
+          BottomNavigationBarItem(
+            icon: Icon(Icons.person),
+            label: 'Profile',
+          ),
+          // BottomNavigationBarItem(icon: Icon(Icons.add), label: 'Add Sahitya'),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.drive_file_rename_outline_sharp),
+            label: 'Draft',
+          ),
+          BottomNavigationBarItem(icon: Icon(Icons.store), label: 'Store'),
+        ],
+      ),
+      body: pages[_currentIndex],
     );
   }
 }

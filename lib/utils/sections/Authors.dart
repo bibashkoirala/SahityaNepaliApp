@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sahitya_application/core/constants/sahitya_colors.dart';
 
 
 class Authors extends StatefulWidget {
@@ -46,7 +47,7 @@ _Authors() {
                         borderRadius: BorderRadius.circular(5),
                       ),
                       elevation: 5,
-                      color: Colors.red[300],
+                      color: SahityaColors.secondaryColor,
                       shadowColor: Colors.black,
                       child: Column(
                         children: [

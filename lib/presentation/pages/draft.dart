@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
+import 'package:sahitya_application/presentation/pages/addsahitya.dart';
 import 'package:sahitya_application/utils/appbar/appbar.dart';
 
 class Draft extends StatelessWidget {
@@ -14,13 +15,13 @@ class Draft extends StatelessWidget {
         scrollDirection: Axis.vertical,
         
         child: Padding(
-          padding: const EdgeInsets.all(10.0),
+          padding: const EdgeInsets.all(8.0),
           child: Column(
             children: [
               Row(
                 children: [
                   Padding(
-                    padding: const EdgeInsets.only(top:28.0),
+                    padding: const EdgeInsets.only(top:30.0, left: 10),
                     child: Text('07 January, 2024', style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold),), 
                   )
                 ]
@@ -29,122 +30,115 @@ class Draft extends StatelessWidget {
                 children: [
                   Expanded(
             flex: 3,
-            child: Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text('Hey BibashJr', style: TextStyle(color:Colors.purple[800] , fontSize: 22, fontWeight: FontWeight.w900),),
-                  Text('You are dooing great!', style: TextStyle(fontSize: 13, color:Colors.purple[300] , fontWeight: FontWeight.bold),),
-                ]
-              )
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text('Hey BibashJr', style: TextStyle(color:Colors.purple[800] , fontSize: 22, fontWeight: FontWeight.w900),),
+                Text('You are dooing great!', style: TextStyle(fontSize: 13, color:Colors.purple[300] , fontWeight: FontWeight.bold),),
+              ]
             ),
           ),
           Expanded(
             flex: 1,
-            child: Padding(
-              padding: const EdgeInsets.all(18.0),
-              child: Container(
-                height: 50,
-                decoration: BoxDecoration(
-                  
-                  borderRadius: BorderRadius.circular(10),
-                  color: Colors.white,
-                ),
-                child: Padding(
-                  padding: const EdgeInsets.only(top:8.0),
-                  child: Column(
-                    children: [
-                      Icon(Icons.circle, color: Colors.orange, size: 24),
-                      Text('Coins', style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold),),
-                    ],
-                  ),
+            child: Container(
+              height: 50,
+              decoration: BoxDecoration(
+                
+                borderRadius: BorderRadius.circular(10),
+                color: Colors.white,
+              ),
+              child: Padding(
+                padding: const EdgeInsets.only(top:8.0),
+                child: Column(
+                  children: [
+                    Icon(Icons.circle, color: Colors.orange, size: 24),
+                    Text('Coins', style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold),),
+                  ],
                 ),
               ),
-              
-              
             ),
           ),
                 ]
               ),
-
-      Text("White Board", style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold, color: Colors.purple[800]),),
+        
+              Text("White Board", style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold, color: Colors.purple[800]),),
             //2rd section
            Row(
-      children: [
-        //Left side
-        Expanded(
+              children: [
+          //Left side
+          Expanded(
           flex: 2,
           child: Column(
             children: [
-              Padding(
-                padding: const EdgeInsets.all(8.0),
+              InkWell(
+                onTap: () {
+                 //view addSahitya.dart
+                  Navigator.of(context).push(
+                    MaterialPageRoute(builder: (context) => AddSahitya()),
+
+                  );
+                },
                 child: Container(
-                  height: 60,
-                  
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(10),
-                  ),
-                  child: Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                      Icon(Icons.add_box_outlined, color: Colors.purple[200], size: 30),
-                      Text('Add New', style: TextStyle(fontSize: 16, color: Colors.purple[900], fontWeight: FontWeight.bold),),
-                    ]),
-                  )
+                height: 60,
+                
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(10),
                 ),
-              ),
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Container(
-                  height: 200,
-                  
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(10),
-                  ),
-                  child: Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                    
-                        Column(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                    Icon(Icons.local_fire_department, color: Colors.purple[200], size: 30),
-                    Text('Catagory 1', style: TextStyle(fontSize: 16, color: Colors.purple[900], fontWeight: FontWeight.w900),),
-                    Text('8 drafts', style: TextStyle(fontSize: 12, color: Colors.purple[900], fontWeight: FontWeight.bold),),
-                    Row(
-                      children: [
-                        Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: Container(
-                            height: 30,
-                            width: 8,
-                            decoration: BoxDecoration(
-                              color: Colors.purple[600],
-                            )
-                          ),
-                        ),
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text('Last edited : 12:30', style: TextStyle(fontSize: 12, color: Colors.purple[900], fontWeight: FontWeight.bold),),
-                            Text('Total Reach : 450', style: TextStyle(fontSize: 12, color: Colors.purple[900], fontWeight: FontWeight.bold),),
-                          ]
+                    Icon(Icons.add_box_outlined, color: Colors.purple[200], size: 30),
+                    Text('Add New', style: TextStyle(fontSize: 16, color: Colors.purple[900], fontWeight: FontWeight.bold),),
+                  ]),
+                )
+              ),
+              ),
+              SizedBox(height: 10,),
+              Container(
+                height: 200,
+                
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(10),
+                ),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                
+                    Column(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                Icon(Icons.local_fire_department, color: Colors.purple[200], size: 30),
+                Text('Catagory 1', style: TextStyle(fontSize: 16, color: Colors.purple[900], fontWeight: FontWeight.w900),),
+                Text('8 drafts', style: TextStyle(fontSize: 12, color: Colors.purple[900], fontWeight: FontWeight.bold),),
+                Row(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Container(
+                        height: 30,
+                        width: 8,
+                        decoration: BoxDecoration(
+                          color: Colors.purple[600],
                         )
+                      ),
+                    ),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text('Last edited : 12:30', style: TextStyle(fontSize: 12, color: Colors.purple[900], fontWeight: FontWeight.bold),),
+                        Text('Total Reach : 450', style: TextStyle(fontSize: 12, color: Colors.purple[900], fontWeight: FontWeight.bold),),
                       ]
                     )
-                  ]),
-                     ]),
-                  )
-                ),
+                  ]
+                )
+                ]),
+                 ])
               ),
-
+        
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Container(
@@ -165,13 +159,13 @@ class Draft extends StatelessWidget {
                   )
                 ),
               ),
-
+        
             ],
-
+        
           ),
-        ),
-        //Right side
-        Expanded(
+          ),
+          //Right side
+          Expanded(
           flex: 2,
           child: Column(
             children: [
@@ -241,16 +235,16 @@ class Draft extends StatelessWidget {
                 ),
               ),
             ],
-
+        
           ),
-        ),
-      ],
-    ),
-
-    //3rd section
-    Row(
-      children: [
-        Expanded(
+          ),
+              ],
+            ),
+        
+            //3rd section
+            Row(
+              children: [
+          Expanded(
           flex: 2,
           child: Padding(
             padding: const EdgeInsets.all(8.0),
@@ -269,8 +263,8 @@ class Draft extends StatelessWidget {
               ),
             )
           ),
-        ),
-        Expanded(
+          ),
+          Expanded(
           flex: 3,
           child: Padding(
             padding: const EdgeInsets.all(8.0),
@@ -281,23 +275,21 @@ class Draft extends StatelessWidget {
                 borderRadius: BorderRadius.circular(10),
               ),
               child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   Icon(Icons.file_present_sharp, color: Colors.purple[200], size: 30),
                   Icon(Icons.calendar_month, color: Colors.purple[200], size: 30),
                   Icon(Icons.precision_manufacturing_outlined, color: Colors.purple[200], size: 30),
-
+        
                 ]
               )
             )
           ),
-        ),
-      ],
-    ),
+          ),
+              ],
+            ),
             ]
           ),
-
-
         ),
 
       )

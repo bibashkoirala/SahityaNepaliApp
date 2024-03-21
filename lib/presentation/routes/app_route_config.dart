@@ -43,13 +43,13 @@ GoRouter router = GoRouter(
       },
       ),
 
-     GoRoute(
-      name: SahityaAppRouteConstants.addsahitya,
-      path: '/addsahitya',
-      pageBuilder: (context, state) {
-        return MaterialPage(child: AddSahitya());
-      },
-      ),
+    //  GoRoute(
+    //   name: SahityaAppRouteConstants.addsahitya,
+    //   path: '/addsahitya',
+    //   pageBuilder: (context, state) {
+    //     return MaterialPage(child: AddSahitya());
+    //   },
+    //   ),
       
      GoRoute(
       name: SahityaAppRouteConstants.draft,

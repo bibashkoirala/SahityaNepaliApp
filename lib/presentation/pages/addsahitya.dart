@@ -14,8 +14,7 @@ class AddSahitya extends StatelessWidget {
           toolbarHeight: 70,
           leading: IconButton(
             icon: const Icon(Icons.arrow_back, color: Colors.black,), onPressed: () { 
-              //navigate to home page
-              
+               Navigator.of(context).pop();
             },
           ),
           title: Row(
