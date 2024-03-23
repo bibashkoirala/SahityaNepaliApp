@@ -28,8 +28,15 @@ class _ProfileState extends State<Profile> {
           padding: const EdgeInsets.all(10),
           children: [
             // COLUMN THAT WILL CONTAIN THE PROFILE
-            Column(
-              children: const [
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children:  [
+                 IconButton(
+                    icon: Icon(Icons.arrow_back),
+                    onPressed: () {
+                      Navigator.of(context).pop();
+                    },
+                  ),
                 CircleAvatar(
                   radius: 50,
                   backgroundImage: NetworkImage(
@@ -37,14 +44,18 @@ class _ProfileState extends State<Profile> {
                   ),
                 ),
                 SizedBox(height: 10),
-                Text(
-                  "Bibash Koirala",
-                  style: TextStyle(
-                    fontSize: 18,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-                Text("UserName")
+                Column(
+                  children: [
+                    Text(
+                      "Bibash Koirala",
+                      style: TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    Text("UserName"),
+                  ],
+                )
               ],
             ),
             const SizedBox(height: 25),

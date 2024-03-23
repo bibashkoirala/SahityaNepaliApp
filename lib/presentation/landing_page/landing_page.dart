@@ -14,10 +14,10 @@ class LandingPage extends StatefulWidget {
 }
 
 class _LandingPageState extends State<LandingPage> {
-  int _currentIndex = 2;
+  int _currentIndex = 1;
   final List<Widget> pages = [
     Home(),
-    Profile(),
+    // Profile(),
     //  AddSahitya(),
     Draft(),
     Store()
@@ -41,14 +41,16 @@ class _LandingPageState extends State<LandingPage> {
             icon: Icon(Icons.home),
             label: 'Home',
           ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.person),
-            label: 'Profile',
-          ),
-          // BottomNavigationBarItem(icon: Icon(Icons.add), label: 'Add Sahitya'),
+          // BottomNavigationBarItem(
+          //   icon: Icon(Icons.person),
+          //   label: 'Profile',
+          // ),
+          // BottomNavigationBarItem(
+          //
+          //icon: Icon(Icons.add), label: 'Add Sahitya'),
           BottomNavigationBarItem(
             icon: Icon(Icons.drive_file_rename_outline_sharp),
-            label: 'Draft',
+            label: 'WorkStation',
           ),
           BottomNavigationBarItem(icon: Icon(Icons.store), label: 'Store'),
         ],
