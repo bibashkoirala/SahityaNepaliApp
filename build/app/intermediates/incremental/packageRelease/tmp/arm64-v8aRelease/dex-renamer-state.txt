@@ -1,4 +1,4 @@
-#Thu Mar 21 21:44:58 NPT 2024
+#Sun Mar 31 13:56:27 NPT 2024
 base.0=C\:\\Users\\natio\\Desktop\\Flutter Clean Architecture\\sahityaApp\\SahityaNepaliApp\\build\\app\\intermediates\\dex\\release\\minifyReleaseWithR8\\classes.dex
 renamed.0=classes.dex
 path.0=classes.dex

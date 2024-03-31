@@ -22,12 +22,7 @@ class Draft extends StatelessWidget {
             children: [
               Row(
                 children: [
-                  IconButton(
-                    icon: Icon(Icons.arrow_back),
-                    onPressed: () {
-                      Navigator.of(context).pop();
-                    },
-                  ),
+                 
                   Padding(
                     padding: const EdgeInsets.only(top:30.0, left: 10),
                     child: Text('07 January, 2024', style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold),), 
@@ -42,7 +37,7 @@ class Draft extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text('Hey BibashJr', style: TextStyle(color:Colors.purple[800] , fontSize: 22, fontWeight: FontWeight.w900),),
-                Text('You are dooing great!', style: TextStyle(fontSize: 13, color:Colors.purple[300] , fontWeight: FontWeight.bold),),
+                Text('You are doing great!', style: TextStyle(fontSize: 13, color:Colors.purple[300] , fontWeight: FontWeight.bold),),
               ]
             ),
           ),
